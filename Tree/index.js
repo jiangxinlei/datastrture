@@ -1,4 +1,4 @@
-import BinarySearchTree from './BinarySearchTree';
+import BinarySearchTree from './Tree.js';
 
 const bst = new BinarySearchTree();
 
@@ -11,13 +11,12 @@ bst.insert(17);
 bst.insert(21);
 let bstStr = '';
 
-bst.postOrderTraversal((key) => {
+bst.afterOrder((key) => {
   bstStr += key + ' ';
 })
 
-
 bst.search(8);
-bst.remove(3);
+// bst.remove(3);
 
 console.log(bst);
 
